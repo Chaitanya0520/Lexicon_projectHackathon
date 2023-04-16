@@ -1,0 +1,30 @@
+<%- include("partials/header") -%>
+<div class ="home">
+<h1>Home</h1>
+<p><%= homeStartingContentShow %></p> 
+
+<div class="h-divider">
+  <div class="shadow"></div>
+  <div class="text2"><img src="https://t1.gstatic.com/images?q=tbn:ANd9GcQsmMfybMIwoE5etmOIAuvnFWdfv_8C1Bq15urJFqwhhI55FyYNP2YuUA" /></div>
+</div>
+
+  <% postsArray.forEach(function(post){  %>
+      <h1><%= post.title %>  </h1>
+        <p><%= post.content.slice(0,200)  %>...<a href="/posts/<%= post._id %>">Read More</a> </p>
+
+  <%  });  %>
+
+  <br><br><br>
+
+  <div class="col-md-3">
+    <button type="button" class="btn mb-2 mb-md-0 btn-tertiary  btn-round" ><span><a href="/compose">Compose Own Blog</a></span>
+    <div class="icon icon-round d-flex align-items-center justify-content-center">
+    <i class="ion-ios-paper-plane"></i>
+    </div>
+    </button>
+  </div>
+
+</div>
+<%- include("partials/footer") -%>
+
+

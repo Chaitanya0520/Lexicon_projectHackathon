@@ -1,0 +1,136 @@
+/* Reset default styles */
+* {
+  background-color: aliceblue;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "verdana", sans-serif;
+}
+
+/* Styling for row container */
+.row {
+  background-color: rgb(210, 255, 127);
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* Styling for h1 inside row container */
+.row h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 3.75em;
+  margin: 0.6em 0;
+  font-weight: 600;
+  color: darkorchid;
+}
+
+/* Styling for columns */
+.column {
+  padding: 1em;
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+  padding: 0 1em;
+}
+
+/* Styling for cards */
+.card {
+  padding: 5em 2em;
+  text-align: center;
+  background: linear-gradient(0deg, #397ef6 10px, transparent 10px);
+  background-repeat: no-repeat;
+  background-position: 0 0.62em;
+  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.15);
+  border-radius: 1em;
+  transition: transform 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Styling for card icons */
+.card .icon img {
+  font-size: 2.5em;
+  height: 4em;
+  width: 4em;
+  margin: auto;
+  background-color: #397ef6;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  color: #ffffff;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+/* Styling for card titles */
+.card h3 {
+  font-size: 1.3em;
+  margin: 1em 0 1.4em 0;
+  font-weight: 600;
+  letter-spacing: 0.3px;
+  color: #070024;
+}
+
+/* Styling for card descriptions */
+.card p {
+  line-height: 2em;
+  color: #625a71;
+}
+
+/* Hover effect for cards */
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 2.5em rgba(0, 0, 0, 0.3);
+}
+
+/* Hover effect for card icons */
+.card .icon img:hover {
+  transform: scale(1.1);
+  background-color: #ff6b6b;
+}
+
+/* Hover effect for card titles */
+.card h3:hover {
+  text-decoration: underline;
+  color: #ff6b6b;
+}
+
+/* Styling for row background */
+.row {
+  background-color: #f8f9fa;
+}
+
+/* Spacing between cards in row */
+.card {
+  margin-bottom: 1em;
+}
+
+/* Padding for section on larger screens */
+@media screen and (min-width: 1200px) {
+  section {
+    padding: 2em 10em;
+  }
+}
+
+/* Border for cards on hover */
+.card:hover {
+  border: 1px solid #397ef6;
+}
+
+/* Transition effect for card border */
+.card {
+  transition: border 0.3s ease;
+}
+
+
+.footImg {
+  border-radius: 80%;
+  display: block;
+margin-left: auto;
+margin-right: auto;
+width: 50%;
+  padding: 5px;
+  width: 350px;
+}
+
+.footImg:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5)
+}
